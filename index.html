@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ScoreKeeper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://yardsandgods.net/sndbox/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://yardsandgods.net/sndbox/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://yardsandgods.net/sndbox/fav/favicon-16x16.png">
+    <link rel="manifest" href="http://yardsandgods.net/sndbox/fav/manifest.json">
+    <link rel="mask-icon" href="http://yardsandgods.net/sndbox/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="http://yardsandgods.net/sndbox/fav/favicon.ico">
+    <meta name="msapplication-config" content="http://yardsandgods.net/sndbox/fav/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="A simple score-keeping app made in Bootstrap 3.3.7, FontAwesome, Animate.Css, JavaScript, CSS3, and HTML5">
+    <meta name="robots" content="index, nofollow">
+    <meta name="author" content="Zach Biri">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ScoreKeeper">
+    <meta property="og:description" content="A simple score-keeping app made in Bootstrap 3.3.7, FontAwesome, Animate.Css, JavaScript, CSS3, and HTML5">
+    <meta property="og:url" content="http://yardsandgods.net/sndbox/index.html">
+    <meta property="og:image" content="http://yardsandgods.net/sndbox/ogpic.jpg">
+
+    <meta property="fb:app_id" content="327799607681010" />
+    <!-- @media screen and (min-width: 768px)
+     .jumbotron .h1, .jumbotron h1 {
+         font-size: 63px; -->
+
+
+
+</head>
+
+<body>
+    <div class="container-float">
+        <div class="jumbotron animated fadeIn container-float">
+            <h1 class="isMonoOne animated tada">
+                <span class="bigLetter animated rotateIn">S</span>core
+                <span class="optionalBreak"></span>
+                <span class="bigLetter animated rotateIn">k</span>eeper</h1>
+            <h4 class="form-inline form-group container">
+                <label for="ptsToWin" class="isMonoOne">How many points wins?&nbsp;&nbsp;</label>
+                <input class="form-control input-sm" type="number" name="ptsToWin" id="ptsToWinActual" min="1" max="99" value="5">
+            </h4>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default isMonoOne" id="p1Butt">
+                    <i class="fa fa-star" aria-hidden="true"></i> P1 Point</button>
+                <button type="button" class="btn btn-default isMonoOne" id="p2Butt">P2 Point
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+            </div>
+            <hr>
+            <div id="scoresList">
+                <table>
+                    <tr id="p1ScoreHeader">
+                        <td class="playerName">
+                            <h3>
+                                <span class="isMonoOne">Player 1:</span>
+                            </h3>
+                        </td>
+                        <td class="scoreSpan">
+                            <h3>
+                                <span id="p1Score"></span>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr id="p2ScoreHeader">
+                        <td class="playerName">
+                            <h3>
+                                <span class="isMonoOne">Player 2:</span>
+                            </h3>
+                        </td>
+                        <td class="scoreSpan">
+                            <h3>
+                                <span id="p2Score"></span>
+                            </h3>
+                        </td>
+                    </tr>
+                </table>
+                <!-- <h3 id="p1ScoreHeader"><span class="isMonoOne">Player 1:</span> <span id="p1Score"></span></h3>
+                    <h3 id="p2ScoreHeader"><span class="isMonoOne">Player 2:</span> <span id="p2Score"></span></h3> -->
+            </div>
+            <hr>
+            <button class="btn isBlock btn-warning btn-xs isMonoOne">Reset</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin=" anonymous"></script>
+    <script src="scripts.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

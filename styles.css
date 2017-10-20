@@ -1,0 +1,418 @@
+.noDisplay {
+    display: none;
+}
+
+.isGreen {
+    color: rgb(4, 217, 57);
+}
+
+.jumbotron {
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.82+37,0.42+80,0+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.82) 37%, rgba(0, 0, 0, 0.42) 80%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.82) 37%, rgba(0, 0, 0, 0.42) 80%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.82) 37%, rgba(0, 0, 0, 0.42) 80%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+    animation-delay: 0.5s;
+}
+
+h1 {
+    animation-delay: 0.9s;
+}
+
+.btn-group {
+    margin-bottom: 16px;
+}
+
+.wins {
+    color: darkgreen;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.btn-default {
+    border-radius: 24px;
+}
+
+.playerName {
+    min-width: 185px;
+}
+
+html {
+    height: 100%;
+}
+
+.isMonoOne {
+    font-family: 'Rubik Mono One';
+}
+
+input {
+    text-align: center;
+}
+
+body {
+    background: black;
+    background-image: url('cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-shadow: 0 5px 23px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'Rubik';
+    overflow-x: hidden;
+}
+
+hr {
+    margin: 0 auto;
+    border: 0;
+    height: 1px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+#ptsToWinActual {
+    color: black;
+    border-radius: 24px;
+    font-family: 'Rubik Mono One';
+}
+
+#scoresList {
+    width: 50%;
+    /*min-width : 420px;*/
+    margin: auto;
+    text-align: left;
+}
+
+.fa-trophy {
+    color: gold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 2px 13px rgba(0, 0, 0, 0.1), 0 5px 23px rgba(0, 0, 0, 0.4);
+}
+
+#scoresList .fa-star {}
+
+.isBlock {
+    display: block;
+    margin: 14px auto auto;
+    width: 6.5em;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), 0 4px 52px rgba(0, 0, 0, 0.1), 0 10px 86px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 2px 13px rgba(0, 0, 0, 0.1), 0 5px 23px rgba(0, 0, 0, 0.4);
+}
+
+.bigLetter {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f0ad4e;
+}
+
+.boxShadow {
+    box-shadow: 0 5px 23px rgba(0, 0, 0, 0.4);
+}
+
+
+/*Media queries for 1023px on down*/
+
+@media all and (max-width: 4000px) {
+    .jumbotron h1 {
+        font-size: 73px;
+    }
+    #ptsToWinActual {
+        font-size: 16px;
+    }
+    .jumbotron {
+        padding-top: 16px;
+    }
+    .btn-default {
+        padding: 0 84px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 21px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .playerName {
+        /*min-width  : 165px;*/
+        line-height: 45.5px;
+    }
+    #scoresList {
+        width: calc(100%);
+        margin: auto;
+    }
+    table {
+        width: 651px;
+        margin: auto;
+    }
+    .scoreSpan {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/*Media queries for 767px on down*/
+
+@media all and (max-width: 767px) {
+    .jumbotron h1 {
+        font-size: 60px;
+        margin-top: 5px;
+    }
+    .jumbotron {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .btn-default {
+        padding: 0 35px;
+        line-height: 30px;
+        height: 30px;
+    }
+    h3 {
+        font-size: 21px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .playerName {
+        min-width: 165px;
+        line-height: 45.5px;
+    }
+    #scoresList {
+        width: calc(100%);
+        margin: auto;
+    }
+    table {
+        width: 430px;
+        margin: auto;
+    }
+    .scoreSpan {
+        text-align: center;
+        width: 100%;
+    }
+    label {
+        font-size: 14px;
+        padding-left: inherit;
+        margin-bottom: 15px;
+    }
+    h4 {
+        margin-bottom: 17px;
+        padding: 0;
+    }
+    .isBlock {
+        margin-top: 13px;
+    }
+    .optionalBreak:after {
+        content: "\a";
+        white-space: pre;
+    }
+    #ptsToWinActual {
+        width: 417.53px;
+        height: 30px;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+
+/*Media queries for 459px on down*/
+
+@media all and (max-width: 459px) {
+    .jumbotron h1 {
+        font-size: 60px;
+        margin-top: 5px;
+    }
+    .jumbotron {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .btn-default {
+        padding: 0 12px;
+        line-height: 30px;
+        height: 30px;
+    }
+    h3 {
+        font-size: 21px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .playerName {
+        min-width: 165px;
+        line-height: 45.5px;
+    }
+    #scoresList {
+        width: calc(100%);
+        margin: auto;
+    }
+    table {
+        width: 328px;
+        margin: auto;
+    }
+    .scoreSpan {
+        text-align: center;
+        width: 100%;
+    }
+    label {
+        font-size: 14px;
+        padding-left: inherit;
+        margin-bottom: 15px;
+    }
+    h4 {
+        margin-bottom: 17px;
+    }
+    .isBlock {
+        margin-top: 13px;
+    }
+    .optionalBreak:after {
+        content: "\a";
+        white-space: pre;
+    }
+    #ptsToWinActual {
+        width: 325.53px;
+        height: 30px;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+
+/*Media queries for 374px on down*/
+
+@media all and (max-width: 374px) {
+    .jumbotron h1 {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+    .jumbotron {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .btn-default {
+        padding: 0 12px;
+        line-height: 30px;
+        height: 30px;
+    }
+    h3 {
+        font-size: 17px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .playerName {
+        min-width: 131px;
+        line-height: 45.5px;
+    }
+    #scoresList {
+        width: calc(100%);
+        margin: auto;
+    }
+    table {
+        width: 290px;
+        margin: auto;
+    }
+    .scoreSpan {
+        text-align: center;
+        width: 100%;
+    }
+    label {
+        font-size: 14px;
+        padding-left: inherit;
+        margin-bottom: 15px;
+    }
+    h4 {
+        margin-bottom: 17px;
+    }
+    .isBlock {
+        margin-top: 13px;
+    }
+    .optionalBreak:after {
+        content: "\a";
+        white-space: pre;
+    }
+    #ptsToWinActual {
+        width: 291.2px;
+        height: 30px;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+
+/*Media queries for 319px on down*/
+
+@media all and (max-width: 319px) {
+    .jumbotron h1 {
+        font-size: 45px;
+        margin-top: 5px;
+    }
+    .jumbotron {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .btn-default {
+        padding: 0 12px;
+        line-height: 30px;
+        height: 30px;
+    }
+    h3 {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .playerName {
+        min-width: 110px;
+        line-height: 45.5px;
+    }
+    #scoresList {
+        width: calc(100%);
+        margin: auto;
+    }
+    table {
+        width: 231px;
+        margin: auto;
+    }
+    .scoreSpan {
+        text-align: center;
+        width: 100%;
+    }
+    label {
+        font-size: 11px;
+        padding-left: inherit;
+        margin-bottom: 15px;
+    }
+    h4 {
+        margin-bottom: 17px;
+    }
+    .isBlock {
+        margin-top: 13px;
+    }
+    .optionalBreak:after {
+        content: "\a";
+        white-space: pre;
+    }
+    #ptsToWinActual {
+        width: 222.58px;
+        border-radius: 24px;
+        height: 30px;
+        margin: auto;
+        font-size: 16px;
+    }
+}
